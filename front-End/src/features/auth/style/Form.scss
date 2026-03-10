@@ -1,0 +1,50 @@
+main{
+    height: 100%;
+    width: 100%;
+    // background:linear-gradient(rgb(0, 0, 0) 0%,rgb(194, 9, 9) 30%,rgb(10, 8, 8) 90%);
+   display: flex;
+        align-items: center;
+        justify-content: center;
+        // padding-top: 5rem;
+       
+
+    .form-container{
+        height: 400px;
+        width: 350px; 
+          display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+         background:linear-gradient(black,rgb(210, 58, 58),rgb(13, 13, 13));
+                backdrop-filter: blur(10px);
+                  -webkit-backdrop-filter: blur(10px); /* For Safari */
+                  border-radius: 5px;
+                   color: black;
+                 
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            input,label{
+                height: 3rem;
+                width: 17rem;
+                text-decoration: none;
+              
+                border: none;
+                border-radius: 5px;
+                 background-color: rgba(255, 247, 247, 0.5);
+                backdrop-filter: blur(10px);
+                  -webkit-backdrop-filter: blur(10px); /* For Safari */
+
+            }
+        }
+     p{
+        color: white;
+        a{
+            color: red;
+            text-decoration: none;
+        }
+     }
+    }
+}

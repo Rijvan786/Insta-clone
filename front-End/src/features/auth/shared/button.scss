@@ -1,0 +1,15 @@
+button{
+     width: 17rem;
+              height: 3rem;
+                text-decoration: none;
+                border: none;
+                border-radius: 5px;
+                 background-color: rgba(202, 23, 23, 0.5);
+                  color: whitesmoke;
+                  font-size: 1.1rem;
+                  transition: all 0.3s ease-in-out;
+      
+}
+ button:active{
+                    transform: scale(0.5);
+                  }
