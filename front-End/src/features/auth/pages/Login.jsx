@@ -10,16 +10,27 @@ const Login = () => {
  
  const submithandler=async(e)=>{
      e.preventDefault()
-     await handleLogin(username,password)
-      navigate("/")
-     
-
- }
- if(Loading){
-    return (<main>
+     try{
+        await handleLogin(username,password)
+         if(Loading){
+    return (<main className='Loading'>
         <h1>Loading.....</h1>
     </main>)
  }
+        alert("Logged In succeessfully")
+        navigate("/Feed")
+     }
+     catch(err){
+           alert("User is Enter Invalid Cretials",err)
+            navigate("/login")
+    
+     }
+  
+      
+     
+
+ }
+
    return (
      <main>
          <div className="form-container">

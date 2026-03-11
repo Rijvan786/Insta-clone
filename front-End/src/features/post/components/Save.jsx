@@ -4,11 +4,11 @@ import { useNavigate } from 'react-router'
 
 const Save = () => {
  const navigator=useNavigate()
-  const {Loading,Feed,handlefeed,posts,Follow}= usePost()
+  const {Loading,posts}= usePost()
   
 
   if(Loading ){
-    return (<main>
+    return (<main className='Loading'>
       <h1>Loading...</h1>
     </main>)
   }
@@ -18,7 +18,7 @@ const Save = () => {
         <div className="save-container">
            <button
         onClick={()=>{
-          navigator("/")
+          navigator("/Feed")
         }}
         >↩️Back</button>
  

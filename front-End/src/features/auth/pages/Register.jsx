@@ -16,11 +16,12 @@ const submithandler=async(e)=>{
     e.preventDefault()
     await handleRegister(username,email,password)
     console.log(username,email,password);
-
-    navigate("/")
+     alert("Register Successfull")
+    navigate("/Login")
+    
 }
-if(Loading && !!handleRegister){
-    return (<main><h1>Loading.....</h1></main>)
+if(Loading ){
+    return (<main className='Loading'><h1>Loading.....</h1></main>)
 }
   return (
     <main>

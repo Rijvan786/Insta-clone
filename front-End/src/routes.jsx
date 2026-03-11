@@ -5,14 +5,20 @@ import Feed from "./features/post/pages/Feed"
 import CreatePost from "./features/post/pages/CreatePost"
 import Home from "./features/auth/components/Home"
 import Save from "./features/post/components/Save"
+import NotFound from "./features/post/components/NotFound"
 
 
 export const router=createBrowserRouter([
     {
       path:"/",
-      element:<Feed/>
+      element:<Home/>
     },
-    
+
+    {
+      path:"/Feed",
+      element:<Feed/>
+    }
+    ,
     
     {
         path:"/register",
@@ -34,6 +40,10 @@ export const router=createBrowserRouter([
     path:"/Save",
     element:<Save/>
 
+  },
+  {
+    path:"*",
+    element:<NotFound/>
   }
 
 ])

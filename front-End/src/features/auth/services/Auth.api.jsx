@@ -1,6 +1,6 @@
 import axios from "axios"
 const api=axios.create({
-    baseURL:"https://insta-clone-2wag.onrender.com",
+    baseURL:"https://insta-clone-2wag.onrender.com/api/Instagram",
     withCredentials:true
 })
 

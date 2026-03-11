@@ -16,9 +16,9 @@ useEffect(function(){
 },[])
 
   const navigator=useNavigate()
-  const navigato=useNavigate()
+ 
 if(Loading || !Feed){
-  return (<main>
+  return (<main className='Loading'>
     <h1>Loading.....</h1>
   </main>)
 }

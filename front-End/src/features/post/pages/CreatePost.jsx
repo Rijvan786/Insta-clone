@@ -13,12 +13,12 @@ const submithandler=async(e)=>{
    const file=ImagField.current.files[0]
  await handlecreatpost(caption,file)
  console.log("successfully created");
-navigate("/")
+navigate("/Feed")
 
 }
 if(Loading){
-  return(<main>
-    <h1>LOding...</h1>
+  return(<main className='Loading'>
+    <h1>Loading...</h1>
   </main>)
 }
 

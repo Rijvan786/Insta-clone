@@ -10,7 +10,7 @@ const {handlelikepost,handleunlikepost,handlegetpost, setposts,Loading,posts,han
 
 
   if(Loading ||!post){
-    return (<main>
+    return (<main className='Loading'>
       <h1>Loading...</h1>
     </main>)
   }

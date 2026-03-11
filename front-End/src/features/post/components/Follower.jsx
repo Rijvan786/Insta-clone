@@ -5,6 +5,7 @@ const Follower = ({posts}) => {
     // console.log(posts)
     // const newPosts = Follow.filter((Follow) => Follow.Follower=Follower)
     // console.log(newPosts);
+    
   return (
   <div className='Followdata'>
      
